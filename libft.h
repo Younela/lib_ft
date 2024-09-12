@@ -1,8 +1,7 @@
 # ifndef LIBFT_H
 # define LIBFT_H
 
-#include <string.h>
-#include <unistd.h>
+#include <stdlib.h>
 
 // <ctype.h>
 
@@ -30,6 +29,19 @@ int     ft_memcmp(const void *b1, const void *b2, size_t len);
 void    *ft_memchr(const void *b, int c, size_t len);
 void    *ft_memcpy(void *dst, const void *src, size_t len);
 void    *ft_memmove(void *dst, const	void *src, size_t len);
+
+char    *ft_strdup(const char *str);
+
+// <stdlib.h>
+
+int    ft_atoi(const char *nbr);
+void	*ft_calloc(size_t nmemb, size_t size);
+
+// Additional functions
+
+char *ft_substr(char const *s, unsigned int start,size_t len);
+char *ft_strjoin(char const *s1, char const *s2);
+char *ft_strtrim(char const *s1, char const *set);
 
 
 
