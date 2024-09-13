@@ -54,7 +54,9 @@ char *ft_strtrim(char const *s1, char const *set)
         i++;
     }
     str[i] = '\0';
+    // or ++>> return (ft_substr(s, start, end - start + 1));
     return str;
+
 }
 
 /*char *ft_strtrim(char const *s1, char const *set)
