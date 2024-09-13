@@ -12,5 +12,4 @@ void bzero(void *b, size_t len)
         ((unsigned char *)b)[i] = 0;
         i++;
     }
-    return (b);
 }
